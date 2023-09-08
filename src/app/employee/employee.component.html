@@ -1,0 +1,17 @@
+<h1>the name of the employee is {{Name}} {{LastName}}</h1>
+<h2>he is {{Age > 18 ? "Correct Age" : "Incorrect Age"}} years old</h2>
+<h3>and works in {{inputCompany.value}}</h3>
+
+<h4>Write the Company</h4>
+<input #inputCompany type="text" (keyup)="0" [disabled]="enabledInput">
+<br>
+
+{{registreredText}}
+<br>
+is Registred?:
+ Yes: <input value="yes" name="rabioButtonRegistrered" type="radio" id="Register" [checked]="userRegistered" (click)="setRegistreredUser($event)"/>
+ No: <input value="no" name="rabioButtonRegistrered" type="radio" (click)="setRegistreredUser($event)"/>
+
+
+
+{{getRegistreredUser()}}
