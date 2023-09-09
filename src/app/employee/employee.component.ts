@@ -20,6 +20,8 @@ GetCompany(company:string){
 }
 */
 
+inputCompany = "Microsoft"
+ 
 enabledInput = false;
 
 userRegistered = false;
@@ -41,6 +43,7 @@ setRegistreredUser(event:Event){
   }
 
 }
+
 
 constructor() {}
 
